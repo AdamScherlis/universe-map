@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{tikz,amsfonts,amsmath}
+\usepackage[paperheight=24in,paperwidth=11in,margin=0.5in]{geometry}
+%\usetikzlibrary{shapes.multipart}
+\usetikzlibrary{positioning}
+\begin{document}
+\centering{
+\begin{tikzpicture}[scale=.85,every text node part/.style={align=center}]
+\foreach \x in {-30,-20,...,30} {%
+  \draw (-1,\x) node[left]{$10^{\x}$ eV}  -- (26,\x) ;
+}%
+\draw (0, -34) -- (0,31);
+\input{raw.tex}
+\end{tikzpicture}
+}
+
+\end{document}

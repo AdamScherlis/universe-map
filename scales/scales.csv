@@ -1,0 +1,152 @@
+//https://www.cfa.harvard.edu/~dfabricant/huchra/ay145/constants.html,,
+ENERGY\\(physics)\\eV
+reduced Planck mass,2.4353299e+18,gev
+Planck mass,1.2208934e+19,gev
+QCD ($\chi(0)$),75.6,MeV
+cosmological constant,1.19e-52,m^-2
+dark energy,1.501e-25,kg/m^3
+GZK limit,8,J
+//OMG particle,3e20,ev
+GUT scale,1e25,ev
+PQ scale (natural),2e11,gev
+PQ scale ($>$),4e8,gev
+SPPC energy,7e4,gev,1e5
+LHC energy,7000,gev,14000
+Higgs vev,246,gev
+CMB,3.76e-23,J
+ENERGY\\(other)\\eV
+gas tank,2e9,J
+lightning bolt,1.1e9,J
+\$1 electricity,3.7e7,J
+Olympic throwers,360,J,780
+M16 bullet,1800,J
+Chipotle burrito,1000,Cal
+AA battery,11340,J
+billiard ball KE,9.8,J
+1 joule,1,J
+gamma rays,1e5,ev,1e7
+X-rays,124,ev,1e5
+UV,380,nm,1.59
+visible light,380,nm,750
+IR,1e6,nm,750
+RF,1e-3,m,1e5
+room temp,.025,ev
+//moment of inertia of ovum,8.03e-33,ev
+//QCD force,1.1e8,ev
+MASS\\(elementary)\\eV$/c^2$
+WIMPzilla,1e12,gev,1e16
+Q-ball,1e5,gev,1e10
+fermion DM ($>$),410,ev
+$t$,172.7,gev
+\phantom{$t$}$H$,125,gev
+\phantom{$tH$}$Z$,91,gev
+\phantom{$tHZ$}$W$,80,gev
+$u$,1.8,MeV,2.8
+\phantom{$q$}$d$,4.5,MeV,5.1
+$c$,1275,MeV
+\phantom{$q$}$s$,95,MeV
+\phantom{$q$}$b$,4180,MeV
+QCD axion,.6e-12,ev,.02
+QCD axion (natural),28e-6,ev
+ADMX,1.5e-6,ev,10e-6
+fuzzy DM,1e-32,gev,1e-30
+\phantom{$qq$ }$\tau^-$,1.78,gev
+\phantom{$qq$ }$\mu^-$,106,MeV
+\phantom{$qq$ }$e^-$,.511,MeV
+$\nu$ $\sum_im_i$ ($<$),.1,ev,.23
+$\nu$ $\Delta m^2_{21}$,7.53e-5,ev^2
+$\nu$ $\Delta m^2_{32}$,.00244,ev^2
+MASS\\(composite)\\eV$/c^2$
+//tardigrade,10.7e-3,g
+fruit fly,2.5e-4,g
+ovum,3.6e-6,g
+human cells,2.2e-11,g,3.6e-6
+sperm,2.2e-11,g
+chromosomes,46944323,bp,247199719
+\textit{E. coli},1e-12,g
+viruses,7.6e-18,g,1e-14
+ribosomes,4.3e-18,g,7.1e-18
+proteins,362,amu,3.8e6
+DNA base pair,1,bp
+amino acids,75,amu,204
+Ni-62,62,amu
+U-238,238,amu
+$\pi^0$,135,MeV
+$\Upsilon$,9460,MeV
+,135,MeV,9460
+$p$,.938,gev
+\phantom{$\Upsilon$}$\Omega^-_b$,6071,MeV
+//baryons,.938,gev,6.071
+positronium,1.022,MeV
+LENGTH\\(inverse)\\$\hbar c/$eV
+1 femtobarn,3.16e-22,m
+1 fermi,1e-15,m
+1 barn,1e-14,m
+C-C bond,154e-12,m
+Bohr radius,5.3e-11,m
+water molecule,.28e-9,m
+DNA,2e-9,m
+viruses,28e-9,m,300e-9
+human cells,4e-6,m,120e-6
+sperm,4e-6,m
+ovum,120e-6,m
+//human hair,100e-6,m
+this line,.4,inch
+baseball,2.86,inch,2.94
+1 foot,12,inch
+this chart,24,inch
+1 smoot,1.7018,m
+football field,100,m
+Mt. Everest, 8.848,km
+LHC,27,km
+marathon,42,km
+to space,100,km
+Earth,12742,km
+to Moon,384e3,km
+to Sun,1.496e11,m
+to Oort,7.5e9,km
+to $\alpha$ Centauri,4.37,year
+Milky Way,1e5,year
+Laniakea SC,520e6,year
+Sloan GW,1.37e9,year
+Hubble,67.8,km/s/Mpc
+TIME\\(inverse)\\$\hbar/$eV
+//atomic clock,1e-18,s
+t quark decay,0.5e-24,s
+b quark decay,1e-12,s
+//3 GHz,3e9,hz
+Cs-133,9192631770,hz
+CPU,3e9,hz
+1 nanosecond,1e-9,s
+muon decay,2.2e-6,s
+audible sound,20,hz,20e3
+HDD,.004,s
+second,1,s
+minute,60,s
+hour,3600,s
+day,86400,s
+neutron decay,881.5,s
+year,1,year
+//Standard Model,43,year
+human lifespan,70,year,122.5
+//Copernicus,474,year
+modern history,564,year
+Roman Empire,1541,year,2044
+writing,5000,year
+//age of Universe (Torah),5777,year
+//Holocene,11700,year
+//LGM,22000,year
+Ice Age,11700,year,110e3
+//fire,120e3,year,1e6
+fire,1e6,year
+//modern humans,50e3,year,150e3
+modern humans,200e3,year
+stone tools,3.4e6,year
+great apes,13e6,year
+dinosaurs,66e6,year,243e6
+Cambrian explosion,541e6,year
+life,3.5e9,year,4.54e9
+age of Universe,13.81e9,year
+//proton decay,1e34,year
+MISC\\\\eV$^A\hbar^Bc^C$
+Earth gravity,2.15e-23,ev
