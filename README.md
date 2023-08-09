@@ -7,7 +7,8 @@ It spans about 60 orders of magnitude vertically and 120 horizontally. The three
 
 The plot itself is in **envelope.pdf**. It's the output of a somewhat convoluted CSV-Python-Mathematica-TeX pipeline.
 
-![image](https://github.com/AdamScherlis/universe-map/assets/3268809/100de614-a7dd-47af-b831-8b9fdb391e04)
+<img src="https://github.com/AdamScherlis/universe-map/assets/3268809/0e0d857c-57c5-4fa8-adaf-f81507d4d2c3" width="800"/>
+
 
 Metadata (e.g. axes and units for each image) is contained in a few CSVs. 
 A Python script does the math to put images in the right place, adds a few extra annotations, and writes out a TeX file. 
@@ -15,4 +16,4 @@ TeX does the actual rendering into a PDF. The Mathematica notebooks are for a co
 
 This plot works by setting the speed of light equal to 1. If you also set Planck's constant to 1, you get a one-dimensional version, found in **scales/scales.pdf**. It works similarly (CSV -> Python -> TeX).
 
-![image](https://github.com/AdamScherlis/universe-map/assets/3268809/a3a680dc-cacc-4c5f-8529-b977fcead762)
+<img src="https://raw.githubusercontent.com/AdamScherlis/universe-map/main/scales/scales.png" width="500"/>
