@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{tikz,amsfonts,amsmath,xcolor,rotating}
+\usepackage[paperheight=7.1in,paperwidth=13.1in,margin=.5in]{geometry}
+\usetikzlibrary{positioning}
+\pagenumbering{gobble}
+\begin{document}
+\centering
+\setlength{\unitlength}{.1in}
+
+\begin{picture}(120,60)(-60,0)
+
+% \put(0,26.042133){\textcolor{red}{\line(3,1){39}}}
+% \put(0,26.042133){\textcolor{red}{\line(-3,-1){19.5}}}
+% \put(-6,23){\textcolor{red}{\begin{turn}{18.4349488}\large fermion DM bound\end{turn}}}
+
+%% axion star lines
+%\put(-31.936177,31.936177){\textcolor{brown}{\line(1,0){63.872354}}}
+%\put(31.936177,31.936177){\textcolor{brown}{\line(-1,1){30}}}
+%\put(-8.179133,8.179133){\textcolor{brown}{\line(1,1){30}}}
+
+
+\input{raw.tex}
+\put(27,45){\large Planets}
+\put(34,45.5){\large Stars}
+\put(29,52){\large Gas Clouds}
+\put(42,57){\large Galaxies}
+\put(2,36){\large Animals}
+\put(-20,26){\large Atoms}
+
+\thicklines
+%\put(-60.774652,60.774652){\line(1,0){121.5493}} %now
+\put(-60.855228,60.855228){\line(1,0){121.71046}}%CC
+\put(-6,62){\large COSMIC HORIZON}
+
+\put(0,0){\line(-1,1){60.855228}}
+\put(-34,31){\begin{turn}{-45}\large PARTICLES\end{turn}}
+%\put(-40,30){\large PARTICLES}
+
+\put(0,0){\line(1,1){60.855228}}
+\put(27,25){\begin{turn}{45}\large BLACK HOLES\end{turn}}
+%\put(31,30){\large BLACK HOLES}
+\thinlines
+
+
+
+\put(-65,30){\huge {$\uparrow$ RADIUS}}
+\put(-4,-5){\huge {MASS $\rightarrow$}}
+
+
+\put(41,0){\large \textbf{MAP OF THE UNIVERSE}}
+\put(45,-3){\large Adam Scherlis 2019-01-20}
+
+\end{picture}
+
+\end{document}

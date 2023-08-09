@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{tikz,amsfonts,amsmath,xcolor}
+\usepackage[paperheight=7.1in,paperwidth=13.1in,margin=.5in]{geometry}
+\usetikzlibrary{positioning}
+\pagenumbering{gobble}
+\begin{document}
+\centering
+\setlength{\unitlength}{.1in}
+
+\begin{picture}(120,60)(-60,0)
+\input{raw.tex}
+\put(27,45){\large Planets}
+\put(41,56){\large Galaxies}
+\put(7,37){\large Fish}
+
+
+\put(-60.774652,60.774652){\line(1,0){121.5493}} %now
+\put(-60.855228,60.855228){\line(1,0){121.71046}}%CC
+\put(-6,61){\large COSMIC HORIZON}
+
+\put(0,0){\line(-1,1){61}}
+\put(-40,30){\large PARTICLES}
+
+\put(0,0){\line(1,1){61}}
+\put(31,30){\large BLACK HOLES}
+
+
+% You have: log(4/3*pi*waterdensity*envl^3/envm)/3
+% You want: 
+% 	Definition: -30.829376
+\put(0,30.829376){\textcolor{blue}{\line(3,1){48}}} %watersphere
+\put(0,30.829376){\textcolor{blue}{\line(-3,-1){25}}} %watersphere
+\put(-8,27){\textcolor{blue}{\large (density of water)}}
+
+
+% You have: log(4/3*pi*2.3*10^17kg/m^3*envl^3/envm)/3
+% You want: 
+% 	Definition: -26.042133
+\put(0,26.042133){\textcolor{red}{\line(3,1){40}}}
+\put(0,26.042133){\textcolor{red}{\line(-3,-1){22}}}
+\put(-7,23){\textcolor{red}{\large (nuclear density)}}
+
+\put(-19.313848,24.014591){$\bullet$ Hydrogen}
+\put(-19.313848,19.23399){$\bullet$ Proton}
+\put(-22.577757,21.877757){$\bullet$ Electron} %22.227757
+\put(-17.189267,16.489267){$\bullet$ Higgs Boson}
+
+%\put(-.35,-.35){$\bullet$}
+%\put(0,0){\hbox{\includegraphics[width=0.02in,height=0.02in]{red.png}}}
+
+\put(44.363471,44.363471){$\bullet$ Sgr A*} %44.713471
+
+
+\put(-65,30){\huge LENGTH}
+\put(-4,-5){\huge MASS}
+
+\end{picture}
+
+\end{document}

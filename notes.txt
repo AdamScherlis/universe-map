@@ -1,0 +1,15 @@
+Each item needs two anchors (or equivalently, two intervals) to map from pixel x/y to log10(size).
+Units: let's use m and g for simplicity in $units
+
+Pivot: where reduced compton = schwarzschild
+hbar/m c = 2G m/c^2
+m^2 = hbar c/2G
+r^2 = hbar 2G/c^3
+
+m = 15.39 ug 	= 10^-4.813 g
+r = 2.286e-35 m	= 10^-34.64 m
+
+
+
+TODO:
+migrate to pdftricks

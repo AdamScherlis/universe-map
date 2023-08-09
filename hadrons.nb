@@ -1,0 +1,2853 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    135428,       2843]
+NotebookOptionsPosition[    133423,       2800]
+NotebookOutlinePosition[    133780,       2816]
+CellTagsIndexPosition[    133737,       2813]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SortBy", "[", 
+  RowBox[{
+   RowBox[{"ParticleData", "[", "All", "]"}], ",", 
+   RowBox[{
+    RowBox[{"ParticleData", "[", 
+     RowBox[{"#", ",", "\"\<Mass\>\""}], "]"}], "&"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7496227424720507`*^9, 3.74962284571306*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"905d761e-d4c3-46f6-8209-3e8c0998428f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"{", 
+          RowBox[{
+           TemplateBox[{"\"g\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"Gluon\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"Gluon\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"photon\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"Photon\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"Photon\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Nu]_e\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"ElectronNeutrino\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"ElectronNeutrino\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Nu]_e-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"ElectronNeutrinoBar\""}], 
+               "]"}],"\"Entity[\\\"Particle\\\", \\\"ElectronNeutrinoBar\\\"]\
+\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Nu]_\[Mu]\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"MuonNeutrino\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"MuonNeutrino\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Nu]_\[Mu]-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"MuonNeutrinoBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"MuonNeutrinoBar\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Nu]_\[Tau]\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"TauNeutrino\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"TauNeutrino\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Nu]_\[Tau]-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"TauNeutrinoBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"TauNeutrinoBar\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"e-\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"Electron\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"Electron\\\"]\"","\"particle\""},
+            
+            "Entity"], ",", 
+           TemplateBox[{"\"e+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"Positron\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"Positron\\\"]\"","\"particle\""},
+            
+            "Entity"], ",", 
+           TemplateBox[{"\"u\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"UpQuark\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"UpQuark\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"u-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"UpQuarkBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"UpQuarkBar\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"d\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"DownQuark\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"DownQuark\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"d-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"DownQuarkBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"DownQuarkBar\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"s\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"StrangeQuark\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"StrangeQuark\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"s-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"StrangeQuarkBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"StrangeQuarkBar\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Mu]-\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"Muon\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"Muon\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Mu]+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"MuonBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"MuonBar\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Pi]0\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"PiZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"PiZero\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Pi]-\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"PiMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"PiMinus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Pi]+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"PiPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"PiPlus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K-\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"KMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"KMinus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"KPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"KPlus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_L\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"KLong\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"KLong\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_S\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"KShort\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"KShort\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K0\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"KZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"KZero\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K0-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"KZeroBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"KZeroBar\\\"]\"","\"particle\""},
+            
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Eta]\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"Eta\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"Eta\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Rho]-(770)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"RhoMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"RhoMinus\\\"]\"","\"particle\""},
+            
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Rho]+(770)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"RhoPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"RhoPlus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Rho]0(770)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"RhoZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"RhoZero\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Omega](782)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"OmegaMeson782\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"OmegaMeson782\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"f_0(600)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"F0Meson600\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"F0Meson600\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_0^*0(800)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K0StarMeson800\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K0StarMeson800\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_0^*+(800)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K0StarMeson800\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K0StarMeson800\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_0^*-(800)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K0StarMeson800Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K0StarMeson800Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_0^*0-bar(800)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K0StarMeson800Bar\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", {\\\"K0StarMeson800Bar\\\", \
+0}]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K*-(892)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"KStarMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"KStarMinus\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K*+(892)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"KStarPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"KStarPlus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K*0(892)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"KStarZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"KStarZero\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K*0-bar(892)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"KStarZeroBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"KStarZeroBar\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"p\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"Proton\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"Proton\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"p-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"ProtonBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"ProtonBar\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"n\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"Neutron\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"Neutron\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"n-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"NeutronBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"NeutronBar\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Eta]^'(958)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"EtaPrime\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"EtaPrime\\\"]\"","\"particle\""},
+            
+            "Entity"], ",", 
+           TemplateBox[{"\"f_0(980)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"F0Meson980\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"F0Meson980\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_0^-(980)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A0Meson980\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A0Meson980\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_0^0(980)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A0Meson980\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A0Meson980\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_0^+(980)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A0Meson980\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A0Meson980\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Phi](1020)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"PhiMeson1020\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"PhiMeson1020\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"X(1070)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XMeson1070\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XMeson1070\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"X(1110)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XMeson1110\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XMeson1110\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalLambda]\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"Lambda\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"Lambda\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalLambda]-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"LambdaBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"LambdaBar\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"h_1(1170)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"H1Meson1170\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"H1Meson1170\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]-\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"SigmaBarMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"SigmaBarMinus\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"SigmaPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"SigmaPlus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]0-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"SigmaBarZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"SigmaBarZero\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]0\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"SigmaZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"SigmaZero\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"SigmaBarPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"SigmaBarPlus\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]-\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"SigmaMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"SigmaMinus\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"b_1^-(1235)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"B1Meson1235\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"B1Meson1235\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"b_1^0(1235)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"B1Meson1235\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"B1Meson1235\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"b_1^+(1235)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"B1Meson1235\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"B1Meson1235\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_1^-(1260)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A1Meson1260\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A1Meson1260\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_1^0(1260)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A1Meson1260\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A1Meson1260\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_1^+(1260)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A1Meson1260\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A1Meson1260\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Delta]-(1232) P_33\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"DeltaBarMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"DeltaBarMinus\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]--(1232) P_33\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"DeltaBarMinusMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"DeltaBarMinusMinus\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]+(1232) P_33\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"DeltaBarPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"DeltaBarPlus\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]0-bar(1232) P_33\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"DeltaBarZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"DeltaBarZero\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{
+            "\"\[CapitalDelta]-(1232) P_33\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"DeltaMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"DeltaMinus\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]+(1232) P_33\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"DeltaPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"DeltaPlus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]++(1232) P_33\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"DeltaPlusPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"DeltaPlusPlus\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]0(1232) P_33\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"DeltaZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"DeltaZero\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"c\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"CharmQuark\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"CharmQuark\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"c-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"CharmQuarkBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"CharmQuarkBar\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_1^0(1270)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K1Meson1270\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K1Meson1270\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_1^+(1270)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K1Meson1270\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K1Meson1270\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_1^-(1270)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K1Meson1270Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K1Meson1270Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_1^0-bar(1270)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K1Meson1270Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K1Meson1270Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"f_2(1270)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"F2Meson1270\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"F2Meson1270\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"f_1(1285)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"F1Meson1285\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"F1Meson1285\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Eta](1295)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"EtaMeson1295\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"EtaMeson1295\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Pi]-(1300)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"PiMeson1300\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"PiMeson1300\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Pi]0(1300)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"PiMeson1300\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"PiMeson1300\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Pi]+(1300)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"PiMeson1300\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"PiMeson1300\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]0-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"XiBarZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"XiBarZero\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]0\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"XiZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"XiZero\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_2^-(1320)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A2Meson1320\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A2Meson1320\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_2^0(1320)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A2Meson1320\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A2Meson1320\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_2^+(1320)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A2Meson1320\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A2Meson1320\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"XiBarPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"XiBarPlus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]-\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"XiMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"XiMinus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"f_0(1370)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"F0Meson1370\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"F0Meson1370\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Pi]_1^-(1400)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Pi1Meson1400\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Pi1Meson1400\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Pi]_1^0(1400)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Pi1Meson1400\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Pi1Meson1400\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Pi]_1^+(1400)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Pi1Meson1400\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Pi1Meson1400\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalSigma]+(1385) P_13\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma1385P13\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma1385P13\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalSigma]-(1385) P_13\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma1385P13Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma1385P13Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalSigma]0(1385) P_13\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma1385P13\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma1385P13\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalSigma]0-bar(1385) P_13\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma1385P13Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma1385P13Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"h_1(1380)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"H1Meson1380\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"H1Meson1380\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalSigma]-(1385) P_13\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma1385P13\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma1385P13\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalSigma]+(1385) P_13\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma1385P13Bar\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma1385P13Bar\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_1^0(1400)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K1Meson1400\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K1Meson1400\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_1^+(1400)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K1Meson1400\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K1Meson1400\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_1^-(1400)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K1Meson1400Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K1Meson1400Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_1^0-bar(1400)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K1Meson1400Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K1Meson1400Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalLambda](1405) S_01\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Lambda1405S01\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Lambda1405S01\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalLambda]-bar(1405) S_01\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Lambda1405S01Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Lambda1405S01Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Eta](1405)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"EtaMeson1405\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"EtaMeson1405\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_0^*0(1430)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K0StarMeson1430\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K0StarMeson1430\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_0^*+(1430)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K0StarMeson1430\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K0StarMeson1430\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_0^*-(1430)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K0StarMeson1430Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K0StarMeson1430Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_0^*0-bar(1430)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K0StarMeson1430Bar\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", {\\\"K0StarMeson1430Bar\\\", \
+0}]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K*0(1410)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"KStarMeson1410\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"KStarMeson1410\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K*+(1410)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"KStarMeson1410\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"KStarMeson1410\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K*-(1410)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"KStarMeson1410Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"KStarMeson1410Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K*0-bar(1410)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"KStarMeson1410Bar\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", {\\\"KStarMeson1410Bar\\\", \
+0}]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"X(1420)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XMeson1420\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XMeson1420\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Omega](1420)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"OmegaMeson1420\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"OmegaMeson1420\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_2^*+(1430)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K2StarMeson1430\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K2StarMeson1430\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_2^*-(1430)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K2StarMeson1430Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K2StarMeson1430Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"f_1(1420)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"F1Meson1420\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"F1Meson1420\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_2^*0(1430)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K2StarMeson1430\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"K2StarMeson1430\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K_2^*0-bar(1430)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"K2StarMeson1430Bar\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", {\\\"K2StarMeson1430Bar\\\", \
+0}]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N0(1440) P_11\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon1440P11\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Nucleon1440P11\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N+(1440) P_11\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon1440P11\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Nucleon1440P11\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N-(1440) P_11\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon1440P11Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Nucleon1440P11Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N0-bar(1440) P_11\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon1440P11Bar\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", {\\\"Nucleon1440P11Bar\\\", \
+0}]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"f_2(1430)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"F2Meson1430\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"F2Meson1430\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Rho]-(1450)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"RhoMeson1450\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"RhoMeson1450\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Rho]0(1450)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"RhoMeson1450\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"RhoMeson1450\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Rho]+(1450)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"RhoMeson1450\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"RhoMeson1450\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K0(1460)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"KMeson1460\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"KMeson1460\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K+(1460)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"KMeson1460\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"KMeson1460\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K-(1460)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"KMeson1460Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"KMeson1460Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K0-bar(1460)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"KMeson1460Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"KMeson1460Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_0^-(1450)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A0Meson1450\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A0Meson1450\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_0^0(1450)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A0Meson1450\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A0Meson1450\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"a_0^+(1450)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"A0Meson1450\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"A0Meson1450\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Eta](1475)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"EtaMeson1475\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"EtaMeson1475\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"715"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           TemplateBox[{"\"D_s1-bar(2536)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"DS1Meson2536Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"DS1Meson2536Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]-(2620)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma2620\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma2620\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]0(2620)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma2620\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma2620\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]+(2620)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma2620\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma2620\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]-(2620)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma2620Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma2620Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalSigma]0-bar(2620)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma2620Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma2620Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]+(2620)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma2620Bar\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma2620Bar\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"D_s2(2573)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"DS2Meson2573\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"DS2Meson2573\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"D_s2-bar(2573)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"DS2Meson2573Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"DS2Meson2573Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^'+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiCPrime\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiCPrime\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^'--bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiCPrimeBar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiCPrimeBar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^'0\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiCPrime\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiCPrime\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^'0-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiCPrimeBar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiCPrimeBar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalLambda]_c(2593)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"LambdaC2593\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"LambdaC2593\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalLambda]_c-bar(2593)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"LambdaC2593Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"LambdaC2593Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N0(2600) I_111\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon2600I111\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Nucleon2600I111\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N+(2600) I_111\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon2600I111\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Nucleon2600I111\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N-(2600) I_111\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon2600I111Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Nucleon2600I111Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N0-bar(2600) I_111\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon2600I111Bar\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", {\\\"Nucleon2600I111Bar\\\", \
+0}]\"","\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalLambda]_c(2625)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"LambdaC2625\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"LambdaC2625\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalLambda]_c-bar(2625)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"LambdaC2625Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"LambdaC2625Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"X(2632)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XMeson2632\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XMeson2632\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"D*(2640)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"DStarMeson2640\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"DStarMeson2640\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"D*-bar(2640)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"DStarMeson2640Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"DStarMeson2640Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^0(2645)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2645\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2645\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalXi]_c^0-bar(2645)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2645Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2645Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^+(2645)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2645\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2645\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^-(2645)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2645Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2645Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"X(2680)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XMeson2680\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XMeson2680\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"Omega_c\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"OmegaC\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"OmegaC\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"Omega_c-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"OmegaCBar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"OmegaCBar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"X(2710)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XMeson2710\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XMeson2710\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"X(2750)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XMeson2750\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XMeson2750\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalLambda]_c(2765)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"LambdaC2765\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"LambdaC2765\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalLambda]_c-bar(2765)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"LambdaC2765Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"LambdaC2765Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^+(2790)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2790\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2790\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^-(2790)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2790Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2790Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]-(2750) I_313\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2750I313\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2750I313\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]0(2750) I_313\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2750I313\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2750I313\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]+(2750) I_313\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2750I313\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2750I313\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]++(2750) I_313\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2750I313\"", ",", "2"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2750I313\\\", 2}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]--(2750) I_313\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2750I313Bar\"", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2750I313Bar\\\", -2}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]-(2750) I_313\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2750I313Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2750I313Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]0-bar(2750) I_313\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2750I313Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2750I313Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]+(2750) I_313\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2750I313Bar\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2750I313Bar\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^0(2790)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2790\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2790\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalXi]_c^0-bar(2790)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2790Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2790Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^+(2815)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2815\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2815\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^-(2815)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2815Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2815Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_c^0(2815)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2815\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2815\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalXi]_c^0-bar(2815)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiC2815Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiC2815Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]-(2950) K_315\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2950K315\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2950K315\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]0(2950) K_315\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2950K315\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2950K315\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]+(2950) K_315\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2950K315\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2950K315\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]++(2950) K_315\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2950K315\"", ",", "2"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2950K315\\\", 2}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]--(2950) K_315\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2950K315Bar\"", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2950K315Bar\\\", -2}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]-(2950) K_315\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2950K315Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2950K315Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]0-bar(2950) K_315\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2950K315Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2950K315Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalDelta]+(2950) K_315\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Delta2950K315Bar\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Delta2950K315Bar\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalLambda]_c(2880)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"LambdaC2880\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"LambdaC2880\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalLambda]_c-bar(2880)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"LambdaC2880Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"LambdaC2880Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Eta]_c(1S)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"EtaCMeson1S\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"EtaCMeson1S\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N0(2700) K_113\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon2700K113\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Nucleon2700K113\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N+(2700) K_113\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon2700K113\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Nucleon2700K113\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N-(2700) K_113\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon2700K113Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Nucleon2700K113Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"N0-bar(2700) K_113\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Nucleon2700K113Bar\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", {\\\"Nucleon2700K113Bar\\\", \
+0}]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]-(3000)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3000\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3000\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]0(3000)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3000\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3000\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]+(3000)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3000\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3000\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]-(3000)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3000Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3000Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalSigma]0-bar(3000)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3000Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3000Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]+(3000)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3000Bar\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3000Bar\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"K(3100)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"KMeson3100\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"KMeson3100\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"J/\[Psi](1S)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"J/Psi\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"J/Psi\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalTheta]_c(3100)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ThetaC3100\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ThetaC3100\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalTheta]_c(3100)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ThetaC3100Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ThetaC3100Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"f_6(3100)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"F6Meson3100\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"F6Meson3100\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]-(3170)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3170\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3170\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]0(3170)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3170\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3170\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]+(3170)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3170\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3170\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]-(3170)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3170Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3170Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalSigma]0-bar(3170)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3170Bar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3170Bar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalSigma]+(3170)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"Sigma3170Bar\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"Sigma3170Bar\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"X0(3250)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XMeson3250\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XMeson3250\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Chi]_c0(1P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ChiC0Meson1P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ChiC0Meson1P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Chi]_c1(1P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ChiC1Meson1P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ChiC1Meson1P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_cc\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiCC\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiCC\\\", 1}]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalXi]_cc-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XiCCBar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XiCCBar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"h_c(1P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"HCMeson1P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"HCMeson1P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Chi]_c2(1P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ChiC2Meson1P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ChiC2Meson1P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Eta]_c(2S)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"EtaCMeson2S\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"EtaCMeson2S\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Psi](2S)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"PsiMeson2S\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"PsiMeson2S\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Psi](3770)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"PsiMeson3770\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"PsiMeson3770\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"X(3872)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XMeson3872\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XMeson3872\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Chi]_c2(2P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ChiC2Meson2P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ChiC2Meson2P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"Y(3940)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"YMeson3940\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"YMeson3940\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Psi](4040)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"PsiMeson4040\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"PsiMeson4040\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Psi](4160)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"PsiMeson4160\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"PsiMeson4160\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"b\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"BottomQuark\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"BottomQuark\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"b-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"BottomQuarkBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"BottomQuarkBar\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"X(4260)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"XMeson4260\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"XMeson4260\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Psi](4415)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"PsiMeson4415\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"PsiMeson4415\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B-\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"BMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"BMinus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"BPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"BPlus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B0\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"BZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"BZero\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B0-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"BZeroBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"BZeroBar\\\"]\"","\"particle\""},
+            
+            "Entity"], ",", 
+           TemplateBox[{"\"B*-\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"BStarMinus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"BStarMinus\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B*+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"BStarPlus\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"BStarPlus\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B*0\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"BStarZero\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"BStarZero\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B*0-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"BStarZeroBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"BStarZeroBar\\\"]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_s\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BSMeson\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"BSMeson\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_s-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BSMesonBar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"BSMesonBar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_s^*\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BSStarMeson\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"BSStarMeson\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_s^*-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BSStarMesonBar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"BSStarMesonBar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalLambda]_b\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"LambdaB\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"LambdaB\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalLambda]_b-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"LambdaBBar\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"LambdaBBar\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_J^*0(5732)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BJStarMeson5732\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"BJStarMeson5732\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_J^*+(5732)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BJStarMeson5732\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"BJStarMeson5732\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_J^*-(5732)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BJStarMeson5732Bar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"BJStarMeson5732Bar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_J^*0-bar(5732)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BJStarMeson5732Bar\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", {\\\"BJStarMeson5732Bar\\\", \
+0}]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_sJ^*(5850)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BSJStarMeson5850\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"BSJStarMeson5850\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_sJ^*-bar(5850)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BSJStarMeson5850Bar\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", \
+{\\\"BSJStarMeson5850Bar\\\", 0}]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_c\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BCMeson\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"BCMeson\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"B_c-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"BCMesonBar\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"BCMesonBar\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Eta]_b(1S)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"EtaBMeson1S\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"EtaBMeson1S\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalUpsilon](1S)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"Upsilon\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"Upsilon\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Chi]_b0(1P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ChiB0Meson1P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ChiB0Meson1P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Chi]_b1(1P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ChiB1Meson1P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ChiB1Meson1P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Chi]_b2(1P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ChiB2Meson1P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ChiB2Meson1P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalUpsilon](2S)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"UpsilonMeson2S\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"UpsilonMeson2S\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalUpsilon](1D)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"UpsilonMeson1D\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"UpsilonMeson1D\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Chi]_b0(2P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ChiB0Meson2P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ChiB0Meson2P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Chi]_b1(2P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ChiB1Meson2P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ChiB1Meson2P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[Chi]_b2(2P)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"ChiB2Meson2P\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"ChiB2Meson2P\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalUpsilon](3S)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"UpsilonMeson3S\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"UpsilonMeson3S\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"\[CapitalUpsilon](4S)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"UpsilonMeson4S\"", ",", "0"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"UpsilonMeson4S\\\", 0}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalUpsilon](10860)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"UpsilonMeson10860\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", {\\\"UpsilonMeson10860\\\", \
+0}]\"","\"particle\""},
+            "Entity"], ",", 
+           
+           TemplateBox[{
+            "\"\[CapitalUpsilon](11020)\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"UpsilonMeson11020\"", ",", "0"}], "}"}]}], 
+               "]"}],"\"Entity[\\\"Particle\\\", {\\\"UpsilonMeson11020\\\", \
+0}]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"W-\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"WBoson\"", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"WBoson\\\", -1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"W+\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", 
+                 RowBox[{"{", 
+                   RowBox[{"\"WBoson\"", ",", "1"}], "}"}]}], "]"}],
+             "\"Entity[\\\"Particle\\\", {\\\"WBoson\\\", 1}]\"",
+             "\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"Z\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"ZBoson\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"ZBoson\\\"]\"","\"particle\""},
+            "Entity"], ",", 
+           TemplateBox[{"\"t\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"TopQuark\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"TopQuark\\\"]\"","\"particle\""},
+            
+            "Entity"], ",", 
+           TemplateBox[{"\"t-bar\"",RowBox[{"Entity", "[", 
+               RowBox[{"\"Particle\"", ",", "\"TopQuarkBar\""}], "]"}],
+             "\"Entity[\\\"Particle\\\", \\\"TopQuarkBar\\\"]\"",
+             "\"particle\""},
+            "Entity"]}], "}"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{61., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLText",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{54., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{54., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 18, 16895973891575303188, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{61., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{61., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 18, 16895973891575303188, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{46., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{46., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 18, 16895973891575303188, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{83., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{83., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    BaseStyle->"OutputSizeLimit",
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  If[16895973891575303188 === $SessionID, 
+   Out[18], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
+ CellChangeTimes->{{3.74962275356973*^9, 3.749622781378058*^9}, 
+   3.749622817786037*^9, 3.749622849587288*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"566b44ab-25a9-43c1-ab03-1a4b876bda5c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", 
+  RowBox[{"ParticleData", "[", 
+   RowBox[{
+    TemplateBox[{"\"W-\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Particle\"", ",", 
+          RowBox[{"{", 
+            RowBox[{"\"WBoson\"", ",", 
+              RowBox[{"-", "1"}]}], "}"}]}], "]"}],
+      "\"Entity[\\\"Particle\\\", {\\\"WBoson\\\", -1}]\"","\"particle\""},
+     "Entity"], ",", "\"\<QuarkContent\>\""}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7496228863249893`*^9, 3.749622899322093*^9}, {
+  3.749623064889984*^9, 3.749623149053747*^9}, {3.7496234511592627`*^9, 
+  3.749623452395677*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"ea881686-59cc-4bf1-8e1a-0c58f6c1db8e"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.749622890447797*^9, 3.749622899599621*^9}, {
+   3.7496230679883823`*^9, 3.7496231496787643`*^9}, 3.749623452683497*^9},
+ CellLabel->"Out[37]=",ExpressionUUID->"5f6f0f5f-8839-4348-82d7-1d6128af9254"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListLogPlot", "[", 
+  RowBox[{"Sort", "[", 
+   RowBox[{"Select", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"ParticleData", "[", 
+         RowBox[{"#", ",", "\"\<Mass\>\""}], "]"}], "]"}], "&"}], "/@", 
+      RowBox[{"ParticleData", "[", "All", "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"#", ">", "0"}], "&"}]}], "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.749623191328958*^9, 3.7496232106990557`*^9}, {
+  3.7496232567193003`*^9, 3.7496233186464033`*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"7b60972a-0248-461f-98fa-97cae7296501"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.007333333333333334], 
+     AbsoluteThickness[1.6], PointBox[CompressedData["
+1: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
+TOc=
+      "]]}, {}}, {}, {}, {}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0., -1.596017837050999},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{
+     Charting`ScaledTicks[{Log, Exp}], 
+     Charting`ScaledFrameTicks[{Log, Exp}]}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  ImageSize->{880., Automatic},
+  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Exp[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Exp[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0., 994}, {-1.379129310377165, 12.06795934340054}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->FrontEndValueCache[{Automatic, 
+     Charting`ScaledTicks[{Log, Exp}]}, {Automatic, {{0., 
+       FormBox["1", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.302585092994046, 
+       FormBox["10", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.605170185988092, 
+       FormBox["100", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.907755278982137, 
+       FormBox["1000", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {9.210340371976184, 
+       FormBox[
+        TemplateBox[{"10", "4"}, "Superscript", SyntaxForm -> SuperscriptBox],
+         TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {11.512925464970229`, 
+       FormBox[
+        TemplateBox[{"10", "5"}, "Superscript", SyntaxForm -> SuperscriptBox],
+         TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {-2.3025850929940455`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-1.6094379124341003`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-1.2039728043259361`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.916290731874155, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.6931471805599453, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.5108256237659907, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.35667494393873245`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.2231435513142097, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.10536051565782628`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {0.6931471805599453, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.0986122886681098`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.3862943611198906`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.6094379124341003`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.791759469228055, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.9459101490553132`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.0794415416798357`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.1972245773362196`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.995732273553991, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {3.4011973816621555`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {3.6888794541139363`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {3.912023005428146, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.0943445622221, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.248495242049359, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.382026634673881, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.499809670330265, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {5.298317366548036, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {5.703782474656201, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {5.991464547107982, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.214608098422191, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.396929655216146, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.551080335043404, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.684611727667927, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.802394763324311, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {7.600902459542082, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {8.006367567650246, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {8.294049640102028, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {8.517193191416238, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {8.699514748210191, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {8.85366542803745, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {8.987196820661973, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {9.104979856318357, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {9.903487552536127, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {10.308952660644293`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {10.596634733096073`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {10.819778284410283`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {11.002099841204238`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {11.156250521031495`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {11.289781913656018`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {11.407564949312402`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {12.206072645530174`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {12.611537753638338`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {12.89921982609012, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {13.122363377404328`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {13.304684934198283`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {13.458835614025542`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {13.592367006650065`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {13.710150042306449`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {13.815510557964274`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {14.508657738524219`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {14.914122846632385`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {15.201804919084164`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}}}]]], "Output",
+ CellChangeTimes->{
+  3.7496232033582783`*^9, {3.749623262409533*^9, 3.7496233219851103`*^9}},
+ CellLabel->"Out[36]=",ExpressionUUID->"a33564c2-5cb3-45f4-af6f-1219137e224f"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Select", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"First", "[", 
+      RowBox[{"ParticleData", "[", 
+       RowBox[{"#", ",", "\"\<Mass\>\""}], "]"}], "]"}], "&"}], "/@", 
+    RowBox[{"ParticleData", "[", "All", "]"}]}], ",", 
+   RowBox[{
+    RowBox[{"#", ">", "0"}], "&"}]}], "]"}]], "Input",ExpressionUUID->\
+"30bfce99-f239-43e4-8ec8-b09fc9588b6b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"hads", "=", 
+   RowBox[{"Select", "[", 
+    RowBox[{
+     RowBox[{"ParticleData", "[", "All", "]"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Length", "[", 
+        RowBox[{
+         RowBox[{"ParticleData", "[", 
+          RowBox[{"#", ",", "\"\<QuarkContent\>\""}], "]"}], "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ">", "1"}], "&"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.749623397786512*^9, 3.749623484240445*^9}, {
+  3.749623581400078*^9, 3.7496236584838247`*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"1d0971f4-5950-4c3f-86d9-a691988c2503"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SortBy", "[", 
+   RowBox[{"hads", ",", 
+    RowBox[{
+     RowBox[{"First", "[", 
+      RowBox[{"ParticleData", "[", 
+       RowBox[{"#", ",", "\"\<Mass\>\""}], "]"}], "]"}], "&"}]}], "]"}], "[", 
+  
+  RowBox[{"[", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5", ",", 
+     RowBox[{"-", "5"}], ",", 
+     RowBox[{"-", "4"}], ",", 
+     RowBox[{"-", "3"}], ",", 
+     RowBox[{"-", "2"}], ",", 
+     RowBox[{"-", "1"}]}], "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.749623487455776*^9, 3.749623495831317*^9}, {
+  3.749623761994491*^9, 3.749623782163512*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"5fb9423a-1331-4319-b9a5-33cb2935d2d1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"\"\[Pi]0\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Particle\"", ",", "\"PiZero\""}], "]"}],
+     "\"Entity[\\\"Particle\\\", \\\"PiZero\\\"]\"","\"particle\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"\[Pi]-\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Particle\"", ",", "\"PiMinus\""}], "]"}],
+     "\"Entity[\\\"Particle\\\", \\\"PiMinus\\\"]\"","\"particle\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"\[Pi]+\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Particle\"", ",", "\"PiPlus\""}], "]"}],
+     "\"Entity[\\\"Particle\\\", \\\"PiPlus\\\"]\"","\"particle\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"K-\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Particle\"", ",", "\"KMinus\""}], "]"}],
+     "\"Entity[\\\"Particle\\\", \\\"KMinus\\\"]\"","\"particle\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"K+\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Particle\"", ",", "\"KPlus\""}], "]"}],
+     "\"Entity[\\\"Particle\\\", \\\"KPlus\\\"]\"","\"particle\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"\[Chi]_b2(2P)\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Particle\"", ",", 
+         RowBox[{"{", 
+           RowBox[{"\"ChiB2Meson2P\"", ",", "0"}], "}"}]}], "]"}],
+     "\"Entity[\\\"Particle\\\", {\\\"ChiB2Meson2P\\\", 0}]\"","\"particle\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"\[CapitalUpsilon](3S)\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Particle\"", ",", 
+         RowBox[{"{", 
+           RowBox[{"\"UpsilonMeson3S\"", ",", "0"}], "}"}]}], "]"}],
+     "\"Entity[\\\"Particle\\\", {\\\"UpsilonMeson3S\\\", 0}]\"",
+     "\"particle\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"\[CapitalUpsilon](4S)\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Particle\"", ",", 
+         RowBox[{"{", 
+           RowBox[{"\"UpsilonMeson4S\"", ",", "0"}], "}"}]}], "]"}],
+     "\"Entity[\\\"Particle\\\", {\\\"UpsilonMeson4S\\\", 0}]\"",
+     "\"particle\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"\[CapitalUpsilon](10860)\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Particle\"", ",", 
+         RowBox[{"{", 
+           RowBox[{"\"UpsilonMeson10860\"", ",", "0"}], "}"}]}], "]"}],
+     "\"Entity[\\\"Particle\\\", {\\\"UpsilonMeson10860\\\", 0}]\"",
+     "\"particle\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"\[CapitalUpsilon](11020)\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Particle\"", ",", 
+         RowBox[{"{", 
+           RowBox[{"\"UpsilonMeson11020\"", ",", "0"}], "}"}]}], "]"}],
+     "\"Entity[\\\"Particle\\\", {\\\"UpsilonMeson11020\\\", 0}]\"",
+     "\"particle\""},
+    "Entity"]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7496234966977453`*^9, {3.7496236438973083`*^9, 3.7496236667771*^9}, {
+   3.749623776957428*^9, 3.7496237852297487`*^9}},
+ CellLabel->"Out[53]=",ExpressionUUID->"3e4420ab-9209-4334-816d-45ebc2f54fd6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ParticleData", "[", 
+  RowBox[{"\"\<PiZero\>\"", ",", "\"\<QuarkContent\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7496235924105263`*^9, 3.749623602521072*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"d3df4dfd-15ec-42d9-85fb-24e107152cf5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"\"d\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Particle\"", ",", "\"DownQuark\""}], "]"}],
+       "\"Entity[\\\"Particle\\\", \\\"DownQuark\\\"]\"","\"particle\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"d-bar\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Particle\"", ",", "\"DownQuarkBar\""}], "]"}],
+       "\"Entity[\\\"Particle\\\", \\\"DownQuarkBar\\\"]\"","\"particle\""},
+      "Entity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"\"u\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Particle\"", ",", "\"UpQuark\""}], "]"}],
+       "\"Entity[\\\"Particle\\\", \\\"UpQuark\\\"]\"","\"particle\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"u-bar\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Particle\"", ",", "\"UpQuarkBar\""}], "]"}],
+       "\"Entity[\\\"Particle\\\", \\\"UpQuarkBar\\\"]\"","\"particle\""},
+      "Entity"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.749623554727212*^9, {3.7496235931220903`*^9, 3.7496236028331013`*^9}},
+ CellLabel->"Out[46]=",ExpressionUUID->"a35a38b8-43a7-4c43-8032-78b0c3b5cb76"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", 
+  RowBox[{"ParticleData", "[", 
+   RowBox[{"\"\<Proton\>\"", ",", "\"\<QuarkContent\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.749623546959676*^9, 3.7496235486521063`*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"90c486a5-784b-440a-85d2-cbc8d3b21483"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.749623548916142*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"3c530925-2fa8-49e1-8a7a-6b7d1c9f15ae"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"First", "[", 
+    RowBox[{"ParticleData", "[", 
+     RowBox[{"#", ",", "\"\<Mass\>\""}], "]"}], "]"}], "&"}], "/@", 
+  "%"}]], "Input",
+ CellChangeTimes->{{3.7496234735847588`*^9, 3.749623474552569*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"b6dfb804-05cc-4912-ac36-ccc0a4953be0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "547.51`5.", ",", "957.78`5.", ",", "497.648`6.", ",", "497.648`6.", ",", 
+   "134.9766`7.", ",", "775.5`4.", ",", "1474.`4.", ",", "2025.`4.", ",", 
+   "1230.`4.", ",", "1647.`4.", ",", "1930.`4.", ",", "2096.`4.", ",", 
+   "2270.`4.", ",", "2340.`4.", ",", "1318.3`5.", ",", "1732.`4.", ",", 
+   "2003.`4.", ",", "2060.`4.", ",", "2180.`4.", ",", "2265.`4.", ",", 
+   "1870.`4.", ",", "2070.`4.", ",", "2310.`4.", ",", "2001.`4.", ",", 
+   "2300.`4.", ",", "2450.`4.", ",", "1229.5`5.", ",", "1960.`4.", ",", 
+   "2240.`4.", ",", "2025.`4.", ",", "1617.`4.", ",", "1842.`4.", ",", 
+   "2030.`4.", ",", "2248.`4.", ",", "2330.`4.", ",", "1294.`4.", ",", 
+   "1409.8`5.", ",", "1476.`4.", ",", "1760.`4.", ",", "2010.`4.", ",", 
+   "2100.`4.", ",", "2190.`4.", ",", "2220.`4.", ",", "2285.`4.", ",", 
+   "1350.`4.", ",", "1480.`4.", ",", "1718.`4.", ",", "1992.`4.", ",", 
+   "2060.`4.", ",", "2103.`4.", ",", "2189.`4.", ",", "2337.`4.", ",", 
+   "1281.8`5.", ",", "1426.3`5.", ",", "1518.`4.", ",", "1971.`4.", ",", 
+   "2310.`4.", ",", "1275.4`5.", ",", "1453.`4.", ",", "1546.`4.", ",", 
+   "1638.`4.", ",", "1815.`4.", ",", "1915.`4.", ",", "1944.`4.", ",", 
+   "2001.`4.", ",", "2010.`4.", ",", "2141.`4.", ",", "2156.`4.", ",", 
+   "2297.`4.", ",", "2340.`4.", ",", "1525.`4.", ",", "2048.`4.", ",", 
+   "2303.`4.", ",", "2025.`4.", ",", "2332.`4.", ",", "2460.`4.", ",", 
+   "3100.`4.", ",", "2231.1`5.", ",", "1170.`4.", ",", "1386.`4.", ",", 
+   "1594.`4.", ",", "1960.`4.", ",", "2220.`4.", ",", "2025.`4.", ",", 
+   "2275.`4.", ",", "1975.`4.", ",", "2195.`4.", ",", "1667.`4.", ",", 
+   "1945.`4.", ",", "2250.`4.", ",", "2280.`4.", ",", "2250.`4.", ",", 
+   "1425.`4.", ",", "1670.`4.", ",", "1960.`4.", ",", "2150.`4.", ",", 
+   "2205.`4.", ",", "2330.`4.", ",", "782.65`5.", ",", "1854.`4.", ",", 
+   "1019.46`6.", ",", "1680.`4.", ",", "2014.`4.", ",", "1672.4`5.", ",", 
+   "1880.`4.", ",", "2005.`4.", ",", "2090.`4.", ",", "2240.`4.", ",", 
+   "2250.`4.", ",", "1300.`4.", ",", "1812.`4.", ",", "2070.`4.", ",", 
+   "2360.`4.", ",", "1940.`4.", ",", "2240.`4.", ",", "1688.8`5.", ",", 
+   "1982.`4.", ",", "2260.`4.", ",", "2300.`4.", ",", "2240.`4.", ",", 
+   "2330.`4.", ",", "1459.`4.", ",", "1720.`4.", ",", "1860.`4.", ",", 
+   "1965.`4.", ",", "2000.`4.", ",", "2149.`4.", ",", "2260.`4.", ",", 
+   "2280.`4.", ",", "1834.`4."}], "}"}]], "Output",
+ CellChangeTimes->{3.749623475231947*^9},
+ CellLabel->"Out[40]=",ExpressionUUID->"92d03cfd-7fbd-4524-ac27-677a1e997f8d"]
+}, Open  ]]
+},
+WindowSize->{1366, 689},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+WindowStatusArea->None,
+FrontEndVersion->"11.3 for Linux x86 (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 367, 8, 31, "Input",ExpressionUUID->"905d761e-d4c3-46f6-8209-3e8c0998428f"],
+Cell[950, 32, 104009, 2159, 911, "Output",ExpressionUUID->"566b44ab-25a9-43c1-ab03-1a4b876bda5c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[104996, 2196, 680, 14, 46, "Input",ExpressionUUID->"ea881686-59cc-4bf1-8e1a-0c58f6c1db8e"],
+Cell[105679, 2212, 249, 3, 68, "Output",ExpressionUUID->"5f6f0f5f-8839-4348-82d7-1d6128af9254"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[105965, 2220, 619, 15, 31, "Input",ExpressionUUID->"7b60972a-0248-461f-98fa-97cae7296501"],
+Cell[106587, 2237, 17388, 340, 568, "Output",ExpressionUUID->"a33564c2-5cb3-45f4-af6f-1219137e224f"]
+}, Open  ]],
+Cell[123990, 2580, 388, 11, 31, "Input",ExpressionUUID->"30bfce99-f239-43e4-8ec8-b09fc9588b6b"],
+Cell[124381, 2593, 618, 16, 31, "Input",ExpressionUUID->"1d0971f4-5950-4c3f-86d9-a691988c2503"],
+Cell[CellGroupData[{
+Cell[125024, 2613, 705, 19, 31, "Input",ExpressionUUID->"5fb9423a-1331-4319-b9a5-33cb2935d2d1"],
+Cell[125732, 2634, 2809, 60, 104, "Output",ExpressionUUID->"3e4420ab-9209-4334-816d-45ebc2f54fd6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[128578, 2699, 267, 4, 31, "Input",ExpressionUUID->"d3df4dfd-15ec-42d9-85fb-24e107152cf5"],
+Cell[128848, 2705, 1161, 25, 47, "Output",ExpressionUUID->"a35a38b8-43a7-4c43-8032-78b0c3b5cb76"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[130046, 2735, 304, 6, 31, "Input",ExpressionUUID->"90c486a5-784b-440a-85d2-cbc8d3b21483"],
+Cell[130353, 2743, 149, 2, 35, "Output",ExpressionUUID->"3c530925-2fa8-49e1-8a7a-6b7d1c9f15ae"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[130539, 2750, 329, 8, 31, "Input",ExpressionUUID->"b6dfb804-05cc-4912-ac36-ccc0a4953be0"],
+Cell[130871, 2760, 2536, 37, 174, "Output",ExpressionUUID->"92d03cfd-7fbd-4524-ac27-677a1e997f8d"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
